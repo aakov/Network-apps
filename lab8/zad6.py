@@ -15,7 +15,7 @@ def handle_imap_command(command, client_socket):
     elif command.startswith('A1 LOGOUT'):
         response = '+ OK Logout completed\r\n'
     elif command.startswith('A1 LIST'):
-        response = '* LIST (\HasNoChildren) "/" INBOX\r\n+ OK List completed\r\n'[ ^ 1 ^][1]
+        response = '* LIST (\HasNoChildren) "/" INBOX\r\n+ OK List completed\r\n'
     elif command.startswith('A1 SELECT'):
         response = '+ OK Select completed\r\n'
     else:
